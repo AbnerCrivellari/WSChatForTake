@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div style="margin-bottom: 5px;">
+    Chat Room:
+    <div class="input-group">
+        <input type="text" id="txtRoomNo" value="ChatForTake" class="form-control" placeholder="Chat room name" aria-label="Chat room" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button id="btnJoin" class="btn btn-primary" type="button">Sign In</button>
+            <button id="btnLeave" class="btn btn-warning" type="button">Sign Out</button>
+        </div>
+    </div>
+</div>
+<div style="margin-bottom:5px;">
+    Username: <input class="form-control" placeholder="Username" type="text" id="txtusernameName" value="Usertest" />
+</div>
+<div style="height:300px;width:600px">
+    <textarea style="height:100%;width:100%" id="msgList" readonly></textarea>
+    <div style="text-align: right">
+        <div class="input-group mb-3">
+            <input type="text" id="txtMsg" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button id="btnSend" class="btn btn-primary" type="button">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
